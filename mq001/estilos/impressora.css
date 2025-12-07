@@ -18,8 +18,12 @@ menu{
     /* não mostrar o menu quando for imprimir*/
 }
 
+article{
+    width: 100%;
+}
+
 article::after{
-    content: 'Essee artigo foi impresso através do site www.cursoemvídeo.com';
+    content: 'Esse artigo foi impresso através do site www.cursoemvídeo.com';
 
     /* Depois do artigo vai aparecer de onde ele foi retirado quando for imprimir*/
 }
