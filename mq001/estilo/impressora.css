@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*Estilo para impressoras*/
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none;
+    /* não mostrar o menu quando for imprimir*/
+}
+
+article::after{
+    content: 'Essee artigo foi impresso através do site www.cursoemvídeo.com';
+
+    /* Depois do artigo vai aparecer de onde ele foi retirado quando for imprimir*/
+}
