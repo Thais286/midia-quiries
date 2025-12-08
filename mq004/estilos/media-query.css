@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/*todas as demais mídias*/
+
+/* typical device Breakpoints onde o layout muda para se adaptar ao tamanho da tela
+
+Pequenas telas: até 600px
+Celular: de 0px até 480px
+Tablet: de 481px até 768px
+Desktop: de 769px até 1279px
+Grandews telas: acima de 1280px...
+
+*/
+
+@media print { /*impressora*/
+
+    * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+    body{
+        background-image: url(../imagens/back-print.jpg); /* desnecessário pq só vai apaecer a img da impressora*/
+ 
+    }
+
+    main{
+        border:2px solid black;
+    }
+     
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after{
+        content: 'Essa impressão foi feita através dos estudos do curso em vídeo módulo 4';
+
+        text-decoration: overline;
+    }
+}
+
+/* no css normal já era para celular por isso não vou fazer dele */
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    body{
+      background-image: url(../imagens/back-phone.jpg);
+    }
+
+    img#phone{display: block;}
+    img#tablet{display: none;}
+    img#impressora{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) { /*tablet*/
+ 
+body{
+  background-image: url(../imagens/back-tablet.jpg);
+
+}
+
+img#phone{display: none;}
+img#tablet{display: block;}
+img#impressora{display: none;}
+img#pc{display: none;}
+img#tv{display: none;}
+
+
+}
+    
+@media screen and (min-width: 769px) and (max-width:1280px){ /*Desktop*/
+
+body{
+  background-image: url(../imagens/back-pc.jpg);
+
+}
+
+img#phone{display: none;}
+img#tablet{display: none;}
+img#impressora{display: none;}
+img#pc{display: block;}
+img#tv{display: none;}
+
+
+}
+
+
+@media screen and (min-width: 1281px){ /* Grandes telas*/
+
+body{
+  background-image: url(../imagens/back-tv.jpg);
+}
+
+main{
+    width: 700px;
+}
+
+
+
+img#phone{display: none;}
+img#tablet{display: none;}
+img#impressora{display: none;}
+img#pc{display: none;}
+img#tv{display: block;}
+
+}
+
+
+
+
+
+
+    
