@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midia Query</title>
-    <link rel="stylesheet" href="estilos/style.css">
+@charset "UTF-8";
 
-    <style>
-      /* Declarações gerais*/
+/* Declarações gerais*/
 
             *{
             margin: 0px;
@@ -29,7 +22,7 @@
             padding: 10px;
         }
 
-      /*Declarações para retrato*/
+/*Declarações para retrato*/
 
       @media screen and (orientation: portrait){
 
@@ -40,7 +33,7 @@
       }     
       }
 
-      /*Declarações para paisagem*/
+ /*Declarações para paisagem*/
 
       @media screen and (orientation: landscape){
         
@@ -50,10 +43,3 @@
     background-position: left bottom;
       }
       }
-
-    </style>
-</head>
-<body>
-    <h1>Mudando a orientação do seu dispositivo</h1>
-</body>
-</html>
