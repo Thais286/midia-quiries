@@ -10,8 +10,10 @@
 
     <link rel="stylesheet" href="estilos/style.css">
     
+    <link rel="stylesheet" href="estilos/media-query.css">
+
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
 
@@ -44,6 +46,16 @@
     </main>
 
     <script>
+        function mudouTamanho(){
+
+            if(window.innerWidth >= 600){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            } /* se a tela for maior que 600 vai aparecer o menu*/
+
+        }
+
         function clickMenu(){
               if(itens.style.display == 'block'){ /* == / significa igual */
                     itens.style.display = 'none' /* = / significa recebe*/
@@ -51,7 +63,7 @@
               } else{
                 itens.style.display = 'block'
               }
-        }
+        } /* vai clicar no menu as opções vão aparecer ,quando clicar de novo elas vão sumiu*/
     </script>
 </body>
 </html>

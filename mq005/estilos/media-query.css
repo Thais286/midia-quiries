@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* typical device Breakpoints onde o layout muda para se adaptar ao tamanho da tela
+
+Pequenas telas: até 600px
+Celular: de 0px até 480px
+Tablet: de 481px até 768px
+Desktop: de 769px até 1279px
+Grandews telas: acima de 1280px...
+
+*/
+
+@media screen and (min-width:600px){
+ 
+    span#burguer{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu > ul > li{
+        display: inline-block;
+    }
+
+    main{
+        width: 600px;
+    }
+}
+    
